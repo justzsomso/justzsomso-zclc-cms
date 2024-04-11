@@ -11,6 +11,7 @@
     <modules>
         <module>zclc-framework</module>
         <module>zclc-admin</module>
+        <module>zclc-foreground</module>
     </modules>
 
 

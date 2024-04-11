@@ -7,8 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+
+/**
+ * @create 2020-05-03 16:01
+ * @desc 前台启动类
+ * @Version
+ * @Modify
+ */
 @SpringBootApplication
-@MapperScan("com.zhoumin.mapper")
+@MapperScan("com.zclc.mapper")
 @EnableScheduling
 @EnableSwagger2
 public class ZclcForegroundApplication {

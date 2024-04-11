@@ -5,12 +5,13 @@
     <groupId>com.zclc</groupId>
     <artifactId>zclc-cms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>zclc-cms</name>
     <description>zclc-cms</description>
-
-
-
-
+    <modules>
+        <module>zclc-framework</module>
+        <module>zclc-admin</module>
+    </modules>
 
 
     <properties>

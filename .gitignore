@@ -1,5 +1,14 @@
-/zclc-admin/zclc-admin.iml
-/zclc-framework/zclc-framework.iml
-/zclc-foreground/zclc-foreground.iml
-/zclc-cms.iml
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/compiler.xml
+/encodings.xml
+/jarRepositories.xml
+/misc.xml
+/vcs.xml
 /.idea/

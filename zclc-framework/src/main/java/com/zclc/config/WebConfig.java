@@ -32,7 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .maxAge(3600);
     }
 
-
+    //fastjson相关配置
     @Bean//使用@Bean注入fastJsonHttpMessageConvert
     public HttpMessageConverter fastJsonHttpMessageConverters() {
         //1.需要定义一个Convert转换消息的对象

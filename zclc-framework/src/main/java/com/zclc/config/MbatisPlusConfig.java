@@ -10,6 +10,8 @@ public class MbatisPlusConfig {
 
     /**
      * 3.4.0之后版本
+     *
+     *mybatis-plus分页插件
      * @return
      */
     @Bean

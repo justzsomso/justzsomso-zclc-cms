@@ -17,6 +17,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class LoginServiceImpl implements LoginService {
@@ -40,7 +41,7 @@ public class LoginServiceImpl implements LoginService {
         Long loginUserId = loginUser.getUser().getId();
         String jwt = JwtUtil.createJWT(String.valueOf(loginUserId));
         //将用户信息存入到redis
-        redisCache.setCacheObject("login:" + loginUserId, loginUser);
+        redisCache.setCacheObject("login:" + loginUserId, loginUser,40, TimeUnit.MINUTES);
 
         //将token和userinfo封装 返回
         UserInfoVo userInfoVo = BeanCopyUtils.copyBean(loginUser.getUser(), UserInfoVo.class);
